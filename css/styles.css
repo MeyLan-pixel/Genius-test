@@ -5,6 +5,9 @@
   --color-brand-dark: #465929;
 }
 /* Base */
+body {
+  color: var(--color-primary-dark);
+}
 ul {
   list-style-type: none;
 }
