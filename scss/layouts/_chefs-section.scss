@@ -1,0 +1,30 @@
+.chef-section {
+  &__title {
+    position: relative;
+    margin: 0 auto 80px;
+
+    &____title::before,
+    &____title::after {
+      position: absolute;
+      bottom: 24px;
+      width: 352px;
+      border: 2px solid var(--color-brand-light);
+      content: '';
+    }
+    &__title::before {
+      left: -0;
+    }
+
+    &__title::after {
+      right: -0;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
